@@ -167,21 +167,3 @@ This project is distributed under the [Unlicense](http://unlicense.org/). Feel f
 
 ---
 
-## :email: Contact
-
-Muhammad Yousif  
-GitHub: [@your_username](https://github.com/your_username)  
-Email: your.email@example.com
-
----
-
-## :tada: Acknowledgments
-
-- Laravel Documentation
-- Bootstrap Framework
-- Font Awesome Icons
-- GitHub Emoji Cheat Sheet
-
----
-
-> _This project README was built using the Best-README-Template structure with custom content._
