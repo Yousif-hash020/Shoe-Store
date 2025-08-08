@@ -1,0 +1,83 @@
+/* Navbar Scroll Effect for Product Page */
+.navbar {
+    background: transparent !important;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.navbar.scrolled {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 4px 20px rgba(44,62,80,0.10);
+}
+
+.navbar .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.12);
+    transition: all 0.3s;
+}
+
+.navbar.scrolled .navbar-brand {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+.navbar .nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar.scrolled .nav-link {
+    color: var(--primary-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Pagination Styling */
+#paginationBar {
+  margin: 30px 0;
+}
+
+#paginationBar .page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+#paginationBar .page-link {
+  color: #007bff;
+  padding: 8px 16px;
+}
+
+#paginationBar .page-link:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        padding: 15px 0;
+    }
+    .navbar-collapse {
+        background: linear-gradient(135deg, rgba(44,62,80,0.97), rgba(231,76,60,0.90));
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .navbar .nav-link {
+        margin: 10px 0;
+    }
+}
